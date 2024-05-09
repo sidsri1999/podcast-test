@@ -1,5 +1,7 @@
 name: Generate Podcast Feeds       # Optional, name of the workflow, to see in action
-on: [push]  
+on: 
+    push:
+        main
     workflow_dispatch:
 jobs:                              # groups together all the jobs under Generate Podcast Feeds
   build:                           # name of the job
