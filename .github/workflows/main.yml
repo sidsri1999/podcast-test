@@ -1,5 +1,6 @@
 name: Generate Podcast Feeds       # Optional, name of the workflow, to see in action
-on: [push]                         # trigger
+on: [push]  
+    workflow_dispatch:
 jobs:                              # groups together all the jobs under Generate Podcast Feeds
   build:                           # name of the job
     runs-on: ubuntu-latest         # where the job will run
